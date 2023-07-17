@@ -75,6 +75,14 @@ nav li a{
 .btn i{
     color: #FFF;
 }
+.sponsor-icon{
+    display: flex;
+    padding: 20px 165px;
+    gap: 60px;
+    justify-content: center;
+    margin: 50px 0;
+    
+}
 
 
 
@@ -95,6 +103,13 @@ nav li a{
     
     .banner-section{
         flex-direction: column-reverse;
+        padding: 20px 20px;
+    }
+    .sponsor-icon{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        
         padding: 20px 20px;
     }
     
