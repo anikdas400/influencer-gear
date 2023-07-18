@@ -128,6 +128,84 @@ nav li a{
     font-size: 14px;
     font-weight: 700;
 }
+.side-button{
+    text-align: right;
+    margin-right: 230px;
+    margin-bottom: 30px;
+}
+.bt{
+    background: #fff;
+    color: red;
+}
+.bt i{
+    background: #fff;
+    color: red;
+}
+/* Featured */
+.Featured{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 50px 10px;
+    background: #fff;
+}
+.Featured-img{}
+.Featured-text{}
+.Featured-text h2{
+    color: #0A0826;
+
+font-size: 38px;
+
+font-weight: 700;
+margin-bottom: 20px;
+}
+.Featured-text p{
+    color: #6C6C6C;
+
+font-size: 16px;
+
+font-weight: 700;
+margin-bottom: 20px;
+}
+/* footer-section */
+footer{
+    background: #000;
+    color: #fff;
+    padding: 70px 0;
+}
+.footer-section{
+    padding: 20px 250px;
+    
+}
+.footer-section h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-section p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #D9DBE1;
+}
+.footer-section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.footer-section ul li{
+    list-style: none;
+}
+.footer-section ul li a{
+    text-decoration: none;
+}
+.footer-section ul li a i{
+    color: #fff;
+}
 
 
 
@@ -151,21 +229,26 @@ nav li a{
         padding: 20px 20px;
     }
     .sponsor-icon{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 10px;
-        
-        padding: 20px 20px;
+        flex-wrap: wrap;
+        padding: 10px;
     }
     .populer-collection{
         grid-template-columns: repeat(1,1fr);
         padding: 20px 100px;
         
     }
+    .Featured{
+        flex-direction: column-reverse;
+        padding: 20px 20px;
+    }
+    .footer-section{
+        padding: 20px 20px;
+        
+    }
     
     
 }
-@media screen and (min-width:576px) and (max-width:840px){
+@media screen and (min-width:576px) and (max-width:992px){
     nav{
         flex-direction: column;
         gap: 20px;
@@ -177,7 +260,23 @@ nav li a{
     }
     .populer-collection{
         grid-template-columns: repeat(1,1fr);
-        padding: 20px 300px;
+        padding: 20px 400px;
+        justify-content: center;
+        
+    }
+    .sponsor-icon{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .Featured{
+        flex-direction: column-reverse;
+        padding: 20px 20px;
+    }
+    .footer-section{
+        
+            padding: 20px 50px;
+            
+        }
         
     }
 }
